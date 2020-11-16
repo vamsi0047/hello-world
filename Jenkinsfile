@@ -29,9 +29,9 @@ pipeline{
      post{
         success {
             archive '**/webapp/target/*.war'
-            archive 'junit \'**/target/**/*.xml\''
-            junit '**/target/**/*.xml'
-        }
+             junit healthScaleFactor: 0.1, skipPublishingChecks: true, testResults: '**/target/**/*.xml'
+            archive '**/target/**/*.xml'
+          }
         failure{
             echo "build failed"
         }
