@@ -28,7 +28,7 @@ pipeline{
      }
      post{
         success {
-            archive '/webapps/target/*.war'
+            archive '**/webapp/target/*.war'
             archive 'junit \'**/target/**/*.xml\''
             junit '**/target/**/*.xml'
         }
