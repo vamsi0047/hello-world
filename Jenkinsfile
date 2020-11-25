@@ -7,7 +7,7 @@ pipeline{
       string defaultValue: 'names', description: 'vasmi', name: 'names', trim: false
     }
     triggers {
-        pollSCM 'H/20 * * * *'
+        pollSCM '* * * * *'
      }
      stages{
          stage("build"){
