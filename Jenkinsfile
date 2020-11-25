@@ -1,6 +1,6 @@
 pipeline{
     agent{
-        label 'jenkins_slave'
+        label 'linux'
     }
    parameters {
       choice choices: ['dv', 'qa', 'qc', 'prod'], description: '', name: 'env'
