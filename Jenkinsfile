@@ -4,7 +4,7 @@ pipeline{
     }
    parameters {
       choice choices: ['dv', 'qa', 'qc', 'prod'], description: '', name: 'env'
-      string defaultValue: 'names', description: 'vasmi', name: 'names', trim: false
+      string defaultValue: 'names', description: 'vamsi', name: 'names', trim: false
     }
     triggers {
         pollSCM '* * * * *'
