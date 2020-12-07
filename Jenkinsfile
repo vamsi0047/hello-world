@@ -1,7 +1,5 @@
 pipeline{
-    agent{
-        label 'linux'
-    }
+    agent any
    parameters {
       choice choices: ['dv', 'qa', 'qc', 'prod'], description: '', name: 'env'
       string defaultValue: 'names', description: 'vamsi', name: 'names', trim: false
