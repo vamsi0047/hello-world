@@ -233,5 +233,17 @@
   <prerequisites>
     <maven>3.0.3</maven>
   </prerequisites>
+         <distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>317674e5e21e-releases</name>
+        <url>http://localhost:8081/artifactory/Hello-world</url>
+    </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>317674e5e21e-snapshots</name>
+        <url>http://localhost:8081/artifactory/Hello-world</url>
+    </snapshotRepository>
+</distributionManagement>
 
 </project>
